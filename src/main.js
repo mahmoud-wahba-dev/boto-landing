@@ -55,3 +55,35 @@ document.addEventListener("DOMContentLoaded", () => {
     yearlyBtn.classList.add("bg-emerald-800", "text-white");
     monthlyBtn.classList.remove("bg-emerald-800", "text-white");
   });
+
+// section 2
+  const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+const target = +counter.getAttribute("data-target");
+
+let count = 0;
+
+const updateCounter = () => {
+
+const increment = target / 100;
+
+count += increment;
+
+if(count < target){
+
+counter.innerText = Math.ceil(count).toLocaleString();
+requestAnimationFrame(updateCounter);
+
+}else{
+
+counter.innerText = "+" + target.toLocaleString();
+
+}
+
+};
+
+updateCounter();
+
+});
