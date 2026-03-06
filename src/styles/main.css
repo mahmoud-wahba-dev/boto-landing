@@ -382,6 +382,62 @@ body {
   .pricing-toggle-text {
   color: #ffffff;
 }
+
+.faq-item {
+  border-radius: 100px;
+}
+
+.faq-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.faq-item .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 300ms ease, opacity 250ms ease;
+}
+
+.faq-item.is-open {
+  background: #f8f8f8;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faq-item.is-open .faq-answer {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.faq-item.is-open .faq-right-icon {
+  background: #0d4c3e;
+  border-radius: 40px;
+}
+
+.faq-item.is-open .faq-plus {
+  display: none;
+}
+
+.faq-item.is-open .faq-bolt {
+  display: inline-block;
+}
+
+.faq-item.is-open .faq-left-icon {
+  width: 44px;
+  height: 44px;
+  background: #0d4c3e;
+}
+
+.faq-item.is-open .faq-chevron-down {
+  display: none;
+}
+
+.faq-item.is-open .faq-chevron-up {
+  display: inline-block;
+}
+
 /* ========================
    Ramadan Animation Library
 ======================== */
