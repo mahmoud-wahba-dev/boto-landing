@@ -321,6 +321,49 @@ body {
     margin-inline-end: 0.1rem;
   }
 }
+
+.pricing-toggle {
+  --toggle-item-width: 122px;
+}
+
+.pricing-toggle-indicator {
+  inset-inline-start: 10px;
+  top: 10px;
+  transition: transform 250ms ease;
+}
+
+.pricing-toggle:has(#toggle-price-count-monthly:checked) .pricing-toggle-indicator {
+  transform: translateX(0);
+}
+
+.pricing-toggle:has(#toggle-price-count-annual:checked) .pricing-toggle-indicator {
+  transform: translateX(calc(-1 * var(--toggle-item-width)));
+}
+
+.pricing-toggle:has(#toggle-price-count-monthly:checked) label[for="toggle-price-count-monthly"] .pricing-toggle-text {
+  color: white;
+}
+
+.pricing-toggle:has(#toggle-price-count-monthly:checked) label[for="toggle-price-count-annual"] .pricing-toggle-text {
+  color: #050505;
+}
+
+.pricing-toggle:has(#toggle-price-count-annual:checked) label[for="toggle-price-count-annual"] .pricing-toggle-text {
+  color: white;
+}
+
+.pricing-toggle:has(#toggle-price-count-annual:checked) label[for="toggle-price-count-monthly"] .pricing-toggle-text {
+  color: #050505;
+}
+
+.pricing-toggle:has(#toggle-price-count-annual:checked) .pricing-save-badge {
+  color: #ffffff;
+}
+
+.pricing-toggle:has(#toggle-price-count-annual:checked) label[for="toggle-price-count-annual"] .pricing-toggle-text,
+.pricing-toggle:has(#toggle-price-count-monthly:checked) label[for="toggle-price-count-monthly"] .pricing-toggle-text {
+  color: #ffffff;
+}
 /* ========================
    Ramadan Animation Library
 ======================== */
