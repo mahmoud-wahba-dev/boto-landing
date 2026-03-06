@@ -712,12 +712,12 @@
           <span class="pricing-toggle-indicator absolute h-[46px] w-[122px] rounded-40px bg-primary"></span>
 
           <label for="toggle-price-count-monthly"
-            class="pricing-toggle-option relative z-[1] flex h-[46px] w-[122px] items-center justify-center px-2">
+            class="pricing-toggle-option relative z-[1] flex h-[46px] w-[122px] items-center justify-center px-2 cursor-pointer ">
             <span class="pricing-toggle-text font-extrabold text-18px text-white">شهري</span>
           </label>
 
           <label for="toggle-price-count-annual"
-            class="pricing-toggle-option relative z-[1] flex h-[46px] w-[122px] items-center justify-center gap-1 px-2">
+            class="pricing-toggle-option relative z-[1] flex h-[46px] w-[122px] items-center justify-center gap-1 px-2 cursor-pointer">
             <span
               class="pricing-save-badge flex items-center justify-center rounded-40px bg-primary/10 px-2.5 py-2 text-10px font-extrabold text-primary">وفّر
               ٢٠٪</span>
@@ -866,30 +866,62 @@
         </div>
 
         <div class="card h-full w-full max-w-none rounded-[80px] border-0 bg-primary shadow-none">
-          <div class="card-body flex flex-col items-end gap-[25px] p-[30px] md:p-[65px] text-right">
+          <div class="card-body flex flex-col gap-[25px] p-[30px] md:p-[65px] ">
             <div class="w-full flex items-center justify-between">
-              <span
-                class="badge h-12 rounded-40px border border-primary/10 bg-[#3BC4A6] px-3 text-16px font-black text-white">
-                <span class="icon-[tabler--sparkles] size-[18px]"></span>
-                الأكثر طلبًا
-              </span>
+
 
               <div class="w-[234px] space-y-1.5">
-                <div class="flex items-center justify-end gap-[15px]">
+                <div class="flex items-center  gap-[15px]">
+                  <svg width="28" height="35" viewBox="0 0 28 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.92168 13.8501L8.28043 6.59983C11.7443 1.91323 13.4762 -0.430058 15.0922 0.0651218C16.7079 0.560319 16.7079 3.43436 16.7079 9.18246V9.72443C16.7079 11.7976 16.7079 12.8343 17.3705 13.4845L17.4055 13.5182C18.0822 14.1547 19.1611 14.1547 21.3188 14.1547C25.2019 14.1547 27.1435 14.1547 27.7996 15.3323C27.8105 15.3517 27.821 15.3715 27.8313 15.3912C28.4508 16.5872 27.3266 18.1081 25.0782 21.15L19.7195 28.4002C16.2556 33.0867 14.5236 35.4301 12.9076 34.9349C11.2919 34.4396 11.2919 31.5656 11.2919 25.8174L11.292 25.2758C11.292 23.2024 11.2921 22.1658 10.6295 21.5155L10.5945 21.4819C9.91778 20.8455 8.83888 20.8455 6.68106 20.8455C2.79804 20.8455 0.856542 20.8455 0.20038 19.6677C0.189512 19.6483 0.178942 19.6287 0.168687 19.6087C-0.450726 18.413 0.673404 16.892 2.92168 13.8501Z"
+                      fill="white" />
+                  </svg>
                   <span class="text-24px font-extrabold text-white">برو</span>
-                  <span class="icon-[tabler--bolt] size-[42px] text-white"></span>
                 </div>
                 <p class="text-20px font-medium text-white">مناسبة للمتاجر الاعمال الكبيرة</p>
               </div>
+              <span
+                class="badge h-12 rounded-40px flex items-center border border-primary/10 bg-accrent px-3 text-16px font-black text-white">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.46233 7.89932C6.65856 8.30744 5.75667 8.5115 5.54211 9.20152C5.32754 9.8915 5.94238 10.6105 7.17207 12.0484L7.4902 12.4205C7.83964 12.829 8.01436 13.0334 8.09296 13.2862C8.17157 13.5389 8.14515 13.8115 8.09232 14.3567L8.04423 14.853C7.85831 16.7716 7.76536 17.7309 8.32711 18.1574C8.88886 18.5838 9.73326 18.1949 11.4221 17.4173L11.8591 17.2162C12.339 16.9952 12.579 16.8847 12.8333 16.8847C13.0877 16.8847 13.3277 16.9952 13.8076 17.2162L14.2445 17.4173C15.9334 18.1949 16.7778 18.5838 17.3396 18.1574C17.9013 17.7309 17.8084 16.7716 17.6225 14.853M18.4946 12.0484C19.7243 10.6105 20.3391 9.8915 20.1246 9.20152C19.91 8.5115 19.0081 8.30744 17.2044 7.89932L16.7377 7.79374C16.2251 7.67776 15.9688 7.61978 15.763 7.46357C15.5573 7.30735 15.4253 7.07059 15.1613 6.59708L14.921 6.16598C13.9921 4.49966 13.5277 3.6665 12.8333 3.6665C12.139 3.6665 11.6746 4.49966 10.7456 6.16598"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                  <path d="M1.91479 14.6667C2.93741 13.8609 4.29585 13.564 5.58146 13.8652" stroke="white"
+                    stroke-width="1.5" stroke-linecap="round" />
+                  <path d="M1.91479 9.62484C2.83146 9.1665 3.09707 9.22196 3.74813 9.1665" stroke="white"
+                    stroke-width="1.5" stroke-linecap="round" />
+                  <path
+                    d="M1.83331 5.14087L2.02413 5.02912C4.04599 3.84507 6.18777 3.52589 8.20693 4.10774L8.39749 4.16265"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                الأكثر طلبًا
+              </span>
             </div>
 
             <hr class="w-full text-white/10" />
 
-            <div class="flex items-center justify-end gap-2 text-right">
-              <span class="text-20px font-medium text-white">/ شهريـــا</span>
-              <span class="text-20px font-medium text-white">﷼</span>
+            <div class="flex items-center gap-2 ">
               <span data-toggle-count='{"target":"#toggle-price-count","min":99,"max":792}'
-                class="text-[68px] leading-none font-medium text-white">99</span>
+                class="text-68px font-medium text-white">99</span>
+              <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_36_1616)">
+                  <path
+                    d="M9.33399 15.9452C9.06631 16.5824 8.88938 17.274 8.82159 17.9992L14.4861 16.7064C14.7537 16.0693 14.9305 15.3776 14.9985 14.6523L9.33399 15.9452Z"
+                    fill="white" />
+                  <path
+                    d="M14.4876 12.8339C14.7553 12.1968 14.9322 11.5051 15 10.7799L10.5876 11.7875V9.85051L14.4875 8.96067C14.7551 8.32356 14.9321 7.63187 14.9999 6.90665L10.5874 7.91339V0.947429C9.91131 1.35503 9.31085 1.89758 8.82274 2.53756V8.31626L7.05806 8.71898V0C6.38195 0.407453 5.78149 0.950151 5.29338 1.59013V9.12156L1.34489 10.0224C1.07722 10.6595 0.900155 11.3512 0.832236 12.0765L5.29338 11.0585V13.4978L0.512392 14.5887C0.24472 15.2258 0.0677852 15.9175 0 16.6427L5.00436 15.5008C5.41174 15.4099 5.76187 15.1513 5.98951 14.7954L6.90728 13.3345V13.3342C7.00255 13.1831 7.05806 13.0008 7.05806 12.8045V10.6558L8.82274 10.2531V14.127L14.4875 12.8336L14.4876 12.8339Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_36_1616">
+                    <rect width="15" height="18" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span class="text-20px font-medium text-white">/ شهريـــا</span>
+
             </div>
 
             <button
@@ -905,119 +937,119 @@
               <ul class="space-y-[25px]">
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>حد الرسائل 50000</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>حد جهات الاتصال 50000</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>حد الأجهزة 10</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>الدردشة الآلية</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>الرسائل الجماعية</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>جدولة الرسائل</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>رسائل تحديث الطلبات بشكل تلقائي</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>الرسالة الترحيبية</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>تخصيص القوالب وبناء الردود</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>رسائل تلقائية لاستعادة السلات المتروكة</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>الفاتورة</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>الرد التلقائي بالذكاء الاصطناعي على مدار الساعة</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>الرد بحالات الطلب بالذكاء الاصطناعي</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>الرد بتفاصيل واسعار المنتجات بالذكاء الاصطناعي</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>تدريب نموذجك الخاص بالذكاء الاصطناعي دون تكاليف</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>الفاتورة</span>
                 </li>
 
                 <li class="flex items-center gap-2 text-22px font-medium text-white">
                   <div class="bg-accrent size-6 rounded-full center">
-                    <span class="icon-[tabler--check] size-4 text-white"></span>
+                    <span class="icon-[tabler--check] size-4 text-primary"></span>
                   </div>
                   <span>الفاتورة</span>
                 </li>
