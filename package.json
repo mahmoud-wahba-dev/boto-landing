@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify-json/ic": "^1.2.4",
     "flyonui": "^2.4.1"
   },
   "devDependencies": {
