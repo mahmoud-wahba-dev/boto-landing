@@ -146,6 +146,9 @@ body {
   /* 24px */
   --text-25px: 1.5625rem;
   /* 25px */
+
+  --text-26px: 1.625rem;
+  /* 26px */
   --text-28px: 1.75rem;
   /* 28px */
   --text-30px: 1.875rem;
@@ -282,6 +285,10 @@ body {
 .btn-black {
   background-color: #000000;
   color: white;
+}
+.btn-white {
+  background-color: white;
+  color: black;
 }
 
 .bg-nav-bg {
