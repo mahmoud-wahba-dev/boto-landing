@@ -58,6 +58,8 @@ body {
   --secondary: #d2ffe3;
   --error: #ff3c3f;
 
+  --color-accrent: #3bc4a6;
+
   --color-primary: #0d4c3e;
   --color-secondary: #d2ffe3;
   --color-error: #ff3c3f;
@@ -95,7 +97,7 @@ body {
   --color-error: #ff3c3f;
   --color-success: #00cf3e;
   --color-gray: #6d6d6d;
-
+  --color-accrent: #3bc4a6;
   /* Neutral Grays */
   --color-d3: #d3d3d3;
   --color-f1: #f1f1f1;
@@ -181,6 +183,8 @@ body {
   /* 64px */
   --text-65px: 4.0625rem;
   /* 65px */
+  --text-68px: 4.25rem;
+  /* 68px */
   --text-72px: 4.5rem;
   /* 72px */
 
@@ -332,27 +336,37 @@ body {
   transition: transform 250ms ease;
 }
 
-.pricing-toggle:has(#toggle-price-count-monthly:checked) .pricing-toggle-indicator {
+.pricing-toggle:has(#toggle-price-count-monthly:checked)
+  .pricing-toggle-indicator {
   transform: translateX(0);
 }
 
-.pricing-toggle:has(#toggle-price-count-annual:checked) .pricing-toggle-indicator {
+.pricing-toggle:has(#toggle-price-count-annual:checked)
+  .pricing-toggle-indicator {
   transform: translateX(calc(-1 * var(--toggle-item-width)));
 }
 
-.pricing-toggle:has(#toggle-price-count-monthly:checked) label[for="toggle-price-count-monthly"] .pricing-toggle-text {
+.pricing-toggle:has(#toggle-price-count-monthly:checked)
+  label[for="toggle-price-count-monthly"]
+  .pricing-toggle-text {
   color: white;
 }
 
-.pricing-toggle:has(#toggle-price-count-monthly:checked) label[for="toggle-price-count-annual"] .pricing-toggle-text {
+.pricing-toggle:has(#toggle-price-count-monthly:checked)
+  label[for="toggle-price-count-annual"]
+  .pricing-toggle-text {
   color: #050505;
 }
 
-.pricing-toggle:has(#toggle-price-count-annual:checked) label[for="toggle-price-count-annual"] .pricing-toggle-text {
+.pricing-toggle:has(#toggle-price-count-annual:checked)
+  label[for="toggle-price-count-annual"]
+  .pricing-toggle-text {
   color: white;
 }
 
-.pricing-toggle:has(#toggle-price-count-annual:checked) label[for="toggle-price-count-monthly"] .pricing-toggle-text {
+.pricing-toggle:has(#toggle-price-count-annual:checked)
+  label[for="toggle-price-count-monthly"]
+  .pricing-toggle-text {
   color: #050505;
 }
 
@@ -360,8 +374,12 @@ body {
   color: #ffffff;
 }
 
-.pricing-toggle:has(#toggle-price-count-annual:checked) label[for="toggle-price-count-annual"] .pricing-toggle-text,
-.pricing-toggle:has(#toggle-price-count-monthly:checked) label[for="toggle-price-count-monthly"] .pricing-toggle-text {
+.pricing-toggle:has(#toggle-price-count-annual:checked)
+  label[for="toggle-price-count-annual"]
+  .pricing-toggle-text,
+.pricing-toggle:has(#toggle-price-count-monthly:checked)
+  label[for="toggle-price-count-monthly"]
+  .pricing-toggle-text {
   color: #ffffff;
 }
 /* ========================
