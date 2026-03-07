@@ -816,6 +816,83 @@ body {
   transform: scaleY(1.09);
 }
 
+#multi-slide .carousel {
+  perspective: 1400px;
+}
+
+.testimonial-card {
+  transform: translateY(0) scale(1);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.45s ease, box-shadow 0.45s ease, border-color 0.35s ease;
+}
+
+.carousel-slide.active .testimonial-card {
+  opacity: 1;
+}
+
+.center-slide .testimonial-card {
+  box-shadow: 0 14px 44px rgba(13, 76, 62, 0.16);
+}
+
 .card {
   @apply rounded-40px;
+}
+
+/* ===========================
+   Accessibility & Performance
+   =========================== */
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  /* Disable AOS animations */
+  [data-aos] {
+    pointer-events: auto !important;
+  }
+  
+  [data-aos]::before {
+    display: none !important;
+  }
+}
+
+/* Performance optimizations for continuous animations */
+.animate-float,
+.animate-float-slow,
+.animate-drift-horizontal,
+.animate-rotate-slow {
+  will-change: transform;
+}
+
+.animate-glow-pulse,
+.animate-pulse-gold,
+.animate-pulse-subtle {
+  will-change: box-shadow, opacity;
+}
+
+/* Remove will-change after animation completes to free resources */
+@media (min-width: 768px) {
+  .animate-float,
+  .animate-float-slow,
+  .animate-drift-horizontal {
+    animation-play-state: running;
+  }
+}
+
+/* Disable heavy animations on mobile for better performance */
+@media (max-width: 767px) {
+  .animate-float,
+  .animate-float-slow,
+  .animate-drift-horizontal,
+  .animate-glow-pulse {
+    animation: none !important;
+  }
 }

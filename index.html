@@ -41,7 +41,8 @@
   <link rel="manifest" href="/images/favicon/site.webmanifest" />
   <meta name="theme-color" content="#ED2D48" />
 
-
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
 </head>
 
@@ -119,11 +120,11 @@
   </section>
   <header class="bg-nav-bg pt-[100px] xl:pt-[200px] text-center overflow-hidden">
     <div class="container">
-      <p class="font-extrabold text-base text-black mb-11">
+      <p class="font-extrabold text-base text-black mb-11" data-aos="fade-down" data-aos-delay="100">
         اجعل تواصلك أكثر فعالية مع رسائل احترافية
       </p>
       <div class="relative">
-        <h1 class="font-extrabold text-64px text-primary mb-5">
+        <h1 class="font-extrabold text-64px text-primary mb-5" data-aos="fade-up" data-aos-delay="200">
           تواصـــل فعـــال
           <span class="text-white">
             مـــع عمــــــلائك
@@ -137,14 +138,14 @@
         </span>
       </div>
 
-      <p class="font-normal text-28px text-28 mb-11 leading-[40px]">
+      <p class="font-normal text-28px text-28 mb-11 leading-[40px]" data-aos="fade-up" data-aos-delay="300">
         أرسل إشعارات الطلبات، استهدف السلات المتروكة،
         <br>
         وقدّم ردودًا فورية—بدون تعقيد.
       </p>
 
-      <div class="mb-36 max-sm:mb-44">
-        <a href="" class="btn btn-primary rounded-10px h-[58px] font-extrabold text-14px">
+      <div class="mb-36 max-sm:mb-44" data-aos="zoom-in" data-aos-delay="400">
+        <a href="" class="btn btn-primary rounded-10px h-[58px] font-extrabold text-14px hover:scale-105 transition-transform duration-300">
 
           <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -169,10 +170,11 @@
       <div class="relative text-center px-24 lg:h-[calc(1157px-488px)]">
         <img src="/public/images/Ellipse-hero.webp" alt="ellipse" class="max-w-full">
 
-        <div class="absolute bottom-[-28%] end-[50%] translate-x-[-50%] max-w-[433px] max-lg:bottom-[-30%] ">
+        <div class="absolute bottom-[-28%] end-[50%] translate-x-[-50%] max-w-[433px] max-lg:bottom-[-30%] " data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
           <img src="/public/images/phone-chat.webp" alt="phone-chat" class="max-w-full max-h-full rounded-50px">
           <div
-            class="absolute start-[-34%] bottom-[35%] flex gap-2 items-center max-sm:scale-90 max-sm:bottom-[33%] font-bold text-14px rounded-10px bg-white max-[350px]:hidden  shadow-[10px_0px_100px_0px_#0000001F] px-3.5 py-3">
+            class="absolute start-[-34%] bottom-[35%] flex gap-2 items-center max-sm:scale-90 max-sm:bottom-[33%] font-bold text-14px rounded-10px bg-white max-[350px]:hidden  shadow-[10px_0px_100px_0px_#0000001F] px-3.5 py-3 animate-float"
+            data-aos="fade-right" data-aos-delay="600">
             <div class="avatar-group pull-up -space-x-2">
               <div class="tooltip">
                 <div class="tooltip-toggle avatar">
@@ -224,7 +226,8 @@
         </div>
 
         <div
-          class="absolute top-[10%] start-[11%] bg-white rounded-55px p-8 max-xl:start-[0] max-sm:start-[-4%] max-sm:top-[-3%] max-lg:p-4 max-sm:scale-75">
+          class="absolute top-[10%] start-[11%] bg-white rounded-55px p-8 max-xl:start-[0] max-sm:start-[-4%] max-sm:top-[-3%] max-lg:p-4 max-sm:scale-75 animate-float-slow"
+          data-aos="fade-right" data-aos-delay="700">
           <div class="flex items-center justify-between mb-8">
             <span class="font-medium text-19px text-black">
               طلبات اليوم
@@ -257,7 +260,8 @@
         </div>
 
         <div
-          class="absolute top-[-4%] end-[10%] bg-white rounded-55px p-14 max-xl:end-[0] max-lg:p-4 max-sm:scale-75 max-sm:top-[-6%] max-sm:end-[-4%]">
+          class="absolute top-[-4%] end-[10%] bg-white rounded-55px p-14 max-xl:end-[0] max-lg:p-4 max-sm:scale-75 max-sm:top-[-6%] max-sm:end-[-4%] animate-drift-horizontal"
+          data-aos="fade-left" data-aos-delay="800">
           <div class="flex gap-5 items-center justify-between mb-8">
             <span class="font-medium text-19px text-black">
               زمن الرد
@@ -295,17 +299,17 @@
   <section class="lg:my-36 my-12">
     <div class="container">
       <div class="text-center">
-        <p class="font-extrabold text-18px  mb-4 text-black">
+        <p class="font-extrabold text-18px  mb-4 text-black" data-aos="fade-up">
           أرقامـــــــنا
         </p>
-        <h2 class="font-extrabold text-64px mb-4 text-28 text-primary">
+        <h2 class="font-extrabold text-64px mb-4 text-28 text-primary" data-aos="fade-up" data-aos-delay="100">
           أرقــــام تعكس ثقة عمــــلائنا
         </h2>
-        <p class="font-light text-28  text-28px mb-14">نتائج حقيقية تثبت قوة خدماتنا يوميًا.</p>
+        <p class="font-light text-28  text-28px mb-14" data-aos="fade-up" data-aos-delay="200">نتائج حقيقية تثبت قوة خدماتنا يوميًا.</p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2.5">
-        <div class="p-10 rounded-40px bg-[#F5F3FF]">
+        <div class="p-10 rounded-40px bg-[#F5F3FF] hover:shadow-2xl transition-shadow duration-300" data-aos="flip-up" data-aos-delay="100">
           <div
             class="size-16 mb-16 border border-[#A78BFA25] rounded-full center bg-[linear-gradient(135deg,_rgba(167,139,250,0.125)_0%,_#F5F3FF_100%)] shadow-[0px_1px_2px_-1px_#0000001A,_0px_1px_3px_0px_#0000001A]">
             <div
@@ -330,12 +334,12 @@
           <p class="font-medium text-28 text-primary mb-1">
             التعليقات الإيجابية
           </p>
-          <p class="font-bold text-46px text-[#7C3AED]">
+          <p class="font-bold text-46px text-[#7C3AED]" data-count="921">
             +921
           </p>
         </div>
 
-        <div class="p-10 rounded-40px bg-[#F5F3FF]">
+        <div class="p-10 rounded-40px bg-[#F5F3FF] hover:shadow-2xl transition-shadow duration-300" data-aos="flip-up" data-aos-delay="200">
           <div
             class="size-16 mb-16 border border-[#67E8F925] rounded-full center bg-[#EFF6FF] shadow-[0px_1px_2px_-1px_#0000001A,_0px_1px_3px_0px_#0000001A]">
             <div
@@ -361,14 +365,14 @@
           <p class="font-medium text-28 text-primary mb-1">
             إجمالي العملاء
           </p>
-          <p class="font-bold text-46px text-[#3B82F6]">
+          <p class="font-bold text-46px text-[#3B82F6]" data-count="2750">
             +2,750
           </p>
         </div>
 
 
 
-        <div class="p-10 rounded-40px bg-[#FFF7ED]">
+        <div class="p-10 rounded-40px bg-[#FFF7ED] hover:shadow-2xl transition-shadow duration-300" data-aos="flip-up" data-aos-delay="300">
           <div
             class="size-16 mb-16 border border-[#FBBF2425] rounded-full center bg-[linear-gradient(135deg,rgba(251,191,36,0.125)_0%,#FFF7ED_100%)] shadow-[0px_1px_2px_-1px_#0000001A,0px_1px_3px_0px_#0000001A]">
             <div
@@ -385,7 +389,7 @@
           <p class="font-medium text-28 text-primary mb-1">
             العملاء النشطون
           </p>
-          <p class="font-bold text-46px text-[#F97316]">
+          <p class="font-bold text-46px text-[#F97316]" data-count="2612">
             +2,612
           </p>
         </div>
@@ -418,8 +422,8 @@
               العادية.
 
             </p>
-            <div>
-              <a href="" class="btn btn-primary rounded-10px h-[58px] font-extrabold text-14px">
+            <div data-aos="zoom-in" data-aos-delay="300">
+              <a href="" class="btn btn-primary rounded-10px h-[58px] font-extrabold text-14px hover:scale-105 transition-transform duration-300">
 
                 <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -442,7 +446,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
           <img src="/public/images/whatsapp-bot.webp" alt="whatsapp-bot" class="max-w-full">
         </div>
       </div>
@@ -454,28 +458,28 @@
     <div class="container">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-32 items-center">
 
-        <div>
+        <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
           <img src="/public/images/integrations.webp" alt="integrations" class="max-w-full">
         </div>
         <div>
           <div class="">
-            <p class="font-extrabold text-18px  mb-11 text-black">
+            <p class="font-extrabold text-18px  mb-11 text-black" data-aos="fade-left">
               تكاملات
             </p>
-            <h2 class="font-extrabold text-74px mb-11 text-28 text-primary">
+            <h2 class="font-extrabold text-74px mb-11 text-28 text-primary" data-aos="fade-left" data-aos-delay="100">
               تكامل سلس
               <br>
               مع منصة سلة
             </h2>
-            <p class="font-light text-28  text-28px mb-14">
+            <p class="font-light text-28  text-28px mb-14" data-aos="fade-left" data-aos-delay="200">
               اربط متجرك ومنصاتك المفضلة مباشرة مع بوتو
               <br>
 
               بدون أي تعقيد
 
             </p>
-            <div>
-              <a href="" class="btn btn-primary rounded-10px h-[58px] font-extrabold text-14px">
+            <div data-aos="zoom-in" data-aos-delay="300">
+              <a href="" class="btn btn-primary rounded-10px h-[58px] font-extrabold text-14px hover:scale-105 transition-transform duration-300">
 
                 <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -560,7 +564,7 @@
 
             </div>
             <div
-              class="bg-[#F5F3FF] border border-[#E9D5FF] rounded-40px center font-extrabold text-16px text-[#8B5CF6] px-3 h-9">
+              class="bg-[#F5F3FF] border border-[#E9D5FF] rounded-40px center font-extrabold text-16px text-[#8B5CF6] px-3 h-9 animate-pulse-gold">
               تلقائي
             </div>
 
@@ -578,7 +582,7 @@
         </div>
 
 
-        <div class="p-11 rounded-40px bg-white">
+        <div class="p-11 rounded-40px bg-white hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
           <div class="flex items-center justify-between mb-8">
             <div
               class="size-14  bg-gradient-to-br from-amber-500 to-amber-600 rounded-full center shadow-[0px_6px_18px_0px_#F59E0B25] ">
@@ -598,7 +602,7 @@
 
             </div>
             <div
-              class="bg-[#FFFBEB] border border-[#FDE68A] rounded-40px center font-extrabold text-16px text-[#F59E0B] px-3 h-9">
+              class="bg-[#FFFBEB] border border-[#FDE68A] rounded-40px center font-extrabold text-16px text-[#F59E0B] px-3 h-9 animate-pulse-gold">
               تلقائي
             </div>
 
@@ -646,7 +650,7 @@
 
             </div>
             <div
-              class="bg-[#F0FDF4] border border-[#BBF7D0] rounded-40px center font-extrabold text-16px text-[#25D366] px-3 h-9">
+              class="bg-[#F0FDF4] border border-[#BBF7D0] rounded-40px center font-extrabold text-16px text-[#25D366] px-3 h-9 animate-pulse-gold">
               تلقائي
             </div>
 
@@ -665,8 +669,8 @@
 
       </div>
 
-      <div class="mt-14 text-center">
-        <a href="" class="btn btn-white rounded-10px h-[58px] font-extrabold text-14px !text-primary">
+      <div class="mt-14 text-center" data-aos="fade-up" data-aos-delay="400">
+        <a href="" class="btn btn-white rounded-10px h-[58px] font-extrabold text-14px !text-primary hover:scale-105 transition-transform duration-300">
 
           <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -695,16 +699,16 @@
   <section class="lg:my-36 my-12">
     <div class="container">
       <div class="text-center">
-        <p class="font-extrabold text-18px  mb-4 text-black">
+        <p class="font-extrabold text-18px  mb-4 text-black" data-aos="fade-up">
           التسعير
         </p>
-        <h2 class="font-extrabold text-64px mb-4 text-28 text-primary">
+        <h2 class="font-extrabold text-64px mb-4 text-28 text-primary" data-aos="fade-up" data-aos-delay="100">
           التسعير يناسب جميع أحجام الأعمال
         </h2>
-        <p class="font-light text-28  text-28px mb-14">نتائج حقيقية تثبت قوة خدماتنا يوميًا.</p>
+        <p class="font-light text-28  text-28px mb-14" data-aos="fade-up" data-aos-delay="200">نتائج حقيقية تثبت قوة خدماتنا يوميًا.</p>
       </div>
 
-      <div class="mb-8 flex justify-center">
+      <div class="mb-8 flex justify-center" data-aos="zoom-in" data-aos-delay="200">
         <div id="toggle-price-count"
           class="pricing-toggle relative  flex items-center rounded-[100px] border border-black/10 bg-[#F9F9F9] p-2.5">
           <input id="toggle-price-count-annual" name="toggle-price-count" type="radio" class="peer/annual hidden" />
@@ -729,7 +733,7 @@
       </div>
 
       <div class="mx-auto grid max-w-[1020px] grid-cols-1 gap-5 md:grid-cols-2 items-stretch">
-        <div class="card h-fit w-full max-w-none rounded-80px  bg-f6 shadow-none">
+        <div class="card h-fit w-full max-w-none rounded-80px  bg-f6 shadow-none hover:shadow-2xl transition-shadow duration-300" data-aos="flip-left" data-aos-delay="100">
           <div class="card-body flex flex-col  gap-[25px] p-[30px] xl:p-[65px] ">
             <div class="w-full space-y-1.5">
               <div class="flex items-center  gap-[15px]">
@@ -867,7 +871,7 @@
           </div>
         </div>
 
-        <div class="card h-full w-full max-w-none rounded-[80px] border-0 bg-primary shadow-none">
+        <div class="card h-full w-full max-w-none rounded-[80px] border-0 bg-primary shadow-none hover:shadow-2xl transition-shadow duration-300" data-aos="flip-right" data-aos-delay="200">
           <div class="card-body flex flex-col gap-[25px] p-[30px] md:p-[65px] ">
             <div class="w-full flex items-center justify-between">
 
@@ -1068,13 +1072,13 @@
 
       <div class="grid grid-cols-1 lg:grid-cols-2 xl:gap-20 gap-10 items-center ">
         <div>
-          <h4 class="font-extrabold text-32px sm:text-46px text-primary mb-6">أسئلة سريعة (FAQ)</h4>
-          <p class="font-light text-18px sm:text-22px text-black">أجوبة مختصرة وواضحة قبل ما تبدأ.</p>
+          <h4 class="font-extrabold text-32px sm:text-46px text-primary mb-6" data-aos="fade-right">أسئلة سريعة (FAQ)</h4>
+          <p class="font-light text-18px sm:text-22px text-black" data-aos="fade-right" data-aos-delay="100">أجوبة مختصرة وواضحة قبل ما تبدأ.</p>
         </div>
 
         <div>
           <div class="faq-accordion flex flex-col gap-5 sm:gap-[46px]">
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-left" data-aos-delay="100">
               <button type="button" class="faq-toggle w-full px-4 sm:px-[35px] py-4 sm:py-[20px]" aria-expanded="false">
                 <span class="faq-main flex items-center gap-3 sm:gap-[25px]">
                   <span
@@ -1099,7 +1103,7 @@
               </div>
             </div>
 
-            <div class="faq-item is-open">
+            <div class="faq-item is-open" data-aos="fade-left" data-aos-delay="200">
               <button type="button" class="faq-toggle w-full px-4 sm:px-[35px] py-4 sm:py-[20px]" aria-expanded="true">
                 <span class="faq-main flex items-center gap-3 sm:gap-[25px]">
                   <span
@@ -1125,7 +1129,7 @@
               </div>
             </div>
 
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-left" data-aos-delay="300">
               <button type="button" class="faq-toggle w-full px-4 sm:px-[35px] py-4 sm:py-[20px]" aria-expanded="false">
                 <span class="faq-main flex items-center gap-3 sm:gap-[25px]">
                   <span
@@ -1150,7 +1154,7 @@
               </div>
             </div>
 
-            <div class="faq-item">
+            <div class="faq-item" data-aos="fade-left" data-aos-delay="400">
               <button type="button" class="faq-toggle w-full px-4 sm:px-[35px] py-4 sm:py-[20px]" aria-expanded="false">
                 <span class="faq-main flex items-center gap-3 sm:gap-[25px]">
                   <span
@@ -1186,22 +1190,22 @@
     <div class="container">
       <div class="flex items-center justify-between mb-12 max-sm:flex-col gap-10">
         <div class="">
-          <p class="font-extrabold text-18px  mb-4 text-black">
+          <p class="font-extrabold text-18px  mb-4 text-black" data-aos="fade-up">
             آراء عملائنا !
           </p>
-          <h2 class="font-extrabold text-74px mb-4 text-28 text-primary">
+          <h2 class="font-extrabold text-74px mb-4 text-28 text-primary" data-aos="fade-up" data-aos-delay="100">
             ماذا يقول عملاؤنا عنـــــا!
 
           </h2>
-          <p class="font-light text-28  text-28px ">
+          <p class="font-light text-28  text-28px " data-aos="fade-up" data-aos-delay="200">
 
             نفخر بخدمة أكثر من 10,000 عميل سعيد في أشهر وجهات التسوق في قطر.
 
           </p>
 
         </div>
-        <div>
-          <a href="" class="btn btn-primary rounded-10px h-[58px] font-extrabold text-14px">
+        <div data-aos="zoom-in" data-aos-delay="300">
+          <a href="" class="btn btn-primary rounded-10px h-[58px] font-extrabold text-14px hover:scale-105 transition-transform duration-300">
 
             <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -1248,9 +1252,9 @@
               </div>
               <div class="carousel py-6 rounded-box">
                 <div class="carousel-body gap-6 opacity-0">
-                  <div class="carousel-slide">
+                  <div class="carousel-slide" data-aos="flip-left" data-aos-delay="100">
                     <div
-                      class="card rounded-40px card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
+                      class="card testimonial-card rounded-40px card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
                       <div class="card-body gap-8">
                         <div class="flex items-center gap-3 justify-between items-center">
                           <div class="avatar flex items-center gap-3">
@@ -1299,9 +1303,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-slide">
+                  <div class="carousel-slide" data-aos="flip-left" data-aos-delay="180">
                     <div
-                      class="card card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
+                      class="card testimonial-card card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
                       <div class="card-body gap-8">
                         <div class="flex items-center gap-3 justify-between items-center">
                           <div class="avatar flex items-center gap-3">
@@ -1352,9 +1356,9 @@
                   </div>
 
 
-                  <div class="carousel-slide">
+                  <div class="carousel-slide" data-aos="flip-left" data-aos-delay="260">
                     <div
-                      class="card card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
+                      class="card testimonial-card card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
                       <div class="card-body gap-8">
                         <div class="flex items-center gap-3 justify-between items-center">
                           <div class="avatar flex items-center gap-3">
@@ -1406,9 +1410,9 @@
 
 
 
-                  <div class="carousel-slide">
+                  <div class="carousel-slide" data-aos="flip-left" data-aos-delay="340">
                     <div
-                      class="card card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
+                      class="card testimonial-card card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
                       <div class="card-body gap-8">
                         <div class="flex items-center gap-3 justify-between items-center">
                           <div class="avatar flex items-center gap-3">
@@ -1481,7 +1485,7 @@
       <div class="flex items-center justify-between gap-4 flex-wrap">
         <div>
           <div class="flex items-center gap-4 mb-6 w-[111px] h-12">
-            <img src="/public/images/logo-footer.webp" alt="logo" class="">
+            <img src="/public/images/logo-footer.webp" alt="logo" class="hover:scale-105 transition-transform duration-300">
 
 
           </div>
@@ -1501,7 +1505,7 @@
             </span>
           </div>
           <div class="flex items-center sm:gap-1.5 gap-4">
-            <div class="size-16 rounded-full center bg-primary">
+            <div class="size-16 rounded-full center bg-primary hover:scale-110 hover:rotate-6 transition-all duration-300 cursor-pointer">
               <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M6.56076 0.13718C4.74121 0.219278 3.16412 0.664136 1.89065 1.93222C0.61274 3.20698 0.173408 4.79031 0.0911053 6.59094C0.0399441 7.71481 -0.25922 16.2054 0.608293 18.432C1.19331 19.9342 2.34551 21.0892 3.86144 21.6761C4.56879 21.9512 5.37627 22.1375 6.56076 22.1918C16.4649 22.6401 20.1362 22.396 21.6844 18.432C21.9591 17.7264 22.1482 16.9196 22.2004 15.7381C22.6531 5.80858 22.1271 3.6563 20.4009 1.93222C19.0318 0.566501 17.4214 -0.363178 6.56076 0.13718ZM6.65194 20.1949C5.56755 20.146 4.9792 19.9654 4.5866 19.8134C3.59897 19.4295 2.85714 18.6907 2.47565 17.7089C1.81501 16.017 2.03412 7.98126 2.09307 6.68099C2.1509 5.40735 2.40893 4.24333 3.30758 3.34468C4.41978 2.23524 5.85672 1.69151 15.6407 2.13307C16.9175 2.19076 18.0842 2.44826 18.9851 3.34468C20.0973 4.45412 20.6489 5.90212 20.1996 15.6486C20.1507 16.7303 19.9694 17.3172 19.817 17.7089C18.8105 20.2883 16.4949 20.6464 6.65194 20.1949ZM15.7486 5.24179C15.7486 5.97625 16.3459 6.57347 17.0833 6.57347C17.8206 6.57347 18.419 5.97625 18.419 5.24179C18.419 4.50734 17.8206 3.91065 17.0833 3.91065C16.3459 3.91065 15.7486 4.50734 15.7486 5.24179ZM5.43521 11.164C5.43521 14.3103 7.99215 16.8613 11.1463 16.8613C14.3005 16.8613 16.8575 14.3103 16.8575 11.164C16.8575 8.01759 14.3005 5.46828 11.1463 5.46828C7.99215 5.46828 5.43521 8.01759 5.43521 11.164ZM7.43938 11.164C7.43938 9.1226 9.09879 7.46636 11.1463 7.46636C13.1939 7.46636 14.8533 9.1226 14.8533 11.164C14.8533 13.2064 13.1939 14.8632 11.1463 14.8632C9.09879 14.8632 7.43938 13.2064 7.43938 11.164Z"
@@ -1509,7 +1513,7 @@
               </svg>
 
             </div>
-            <div class="size-16 rounded-full center bg-primary">
+            <div class="size-16 rounded-full center bg-primary hover:scale-110 hover:rotate-6 transition-all duration-300 cursor-pointer">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M8.45086 19.7926C8.60713 18.4987 9.1378 17.7743 10.1378 17.0317C11.5687 16.0259 13.356 16.5948 13.356 16.5948V13.2197C13.7906 13.2085 14.2253 13.2343 14.655 13.2966V17.6401C14.655 17.6401 12.8682 17.0712 11.4374 18.0775C10.4379 18.8196 9.90614 19.5446 9.75041 20.8385C9.74553 21.5411 9.87738 22.4595 10.4846 23.2536C10.3344 23.1766 10.1814 23.0889 10.0255 22.9905C8.68798 22.0923 8.44435 20.7449 8.45086 19.7926ZM22.0351 6.97898C21.0508 5.90039 20.6785 4.81139 20.544 4.04639H21.7822C21.7822 4.04639 21.5353 6.05224 23.3346 8.02482L23.3596 8.05134C22.8746 7.7463 22.4299 7.38624 22.0351 6.97898ZM28 10.0369V14.293C28 14.293 26.4199 14.2312 25.2506 13.9337C23.6179 13.5176 22.5684 12.8795 22.5684 12.8795C22.5684 12.8795 21.8435 12.4245 21.7849 12.3928V21.1817C21.7849 21.6711 21.6509 22.8932 21.2423 23.9125C20.7089 25.246 19.8858 26.1212 19.7344 26.3001C19.7344 26.3001 18.7333 27.4832 16.9671 28.28C15.3751 28.9987 13.9773 28.9805 13.5595 28.9987C13.5595 28.9987 11.1433 29.0944 8.96905 27.6814C8.49889 27.3699 8.06001 27.0172 7.65811 26.6277L7.66896 26.6355C9.84374 28.0485 12.2594 27.9528 12.2594 27.9528C12.6778 27.9346 14.0755 27.9528 15.667 27.2341C17.4316 26.4374 18.4343 25.2543 18.4343 25.2543C18.5841 25.0754 19.411 24.2001 19.9422 22.8662C20.3497 21.8474 20.4848 20.6247 20.4848 20.1354V11.3475C20.5434 11.3797 21.2678 11.8347 21.2678 11.8347C21.2678 11.8347 22.3178 12.4734 23.9505 12.8889C25.1203 13.1864 26.6999 13.2483 26.6999 13.2483V9.91314C27.2403 10.0343 27.701 10.0671 28 10.0369Z"
