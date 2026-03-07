@@ -11,12 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize AOS
   AOS.init({
     duration: 800,
-    once: false,
+    once: true,
+    mirror: false,
     offset: 100,
     easing: 'ease-out-cubic',
-    disable: function() {
-      return window.innerWidth < 768;
-    }
+    disable: false
   });
 
   setTimeout(() => {
