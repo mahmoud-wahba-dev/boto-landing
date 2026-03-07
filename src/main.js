@@ -36,3 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+function updateCenterSlide() {
+  const activeSlides = document.querySelectorAll(".carousel-slide.active");
+
+  activeSlides.forEach(slide => slide.classList.remove("center-slide"));
+
+  if (activeSlides.length >= 3) {
+    activeSlides[1].classList.add("center-slide"); // middle slide
+  }
+}
+
+setInterval(updateCenterSlide, 100);

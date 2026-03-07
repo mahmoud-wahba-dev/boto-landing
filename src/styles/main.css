@@ -398,12 +398,15 @@ body {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 300ms ease, opacity 250ms ease;
+  transition:
+    max-height 300ms ease,
+    opacity 250ms ease;
 }
 
 .faq-item.is-open {
   background: #f8f8f8;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
 }
 
 .faq-item.is-open .faq-answer {
@@ -802,4 +805,15 @@ body {
   .animation-delay-500 {
     animation-delay: 0.5s;
   }
+}
+/* .carousel-body .carousel-slide.active:nth-of-type(3n+2) .card {
+  transform: scaleY(1.3);
+} */
+
+.center-slide .card {
+  transform: scaleY(1.09);
+}
+
+.card {
+  @apply rounded-40px;
 }

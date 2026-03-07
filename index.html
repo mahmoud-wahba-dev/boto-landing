@@ -1061,7 +1061,7 @@
     </div>
   </section>
 
-  <section class="lg:my-36 my-12">
+  <!-- <section class="lg:my-36 my-12">
     <div class="container">
 
       <div class="grid grid-cols-1 lg:grid-cols-2 xl:gap-20 gap-10 items-center ">
@@ -1174,11 +1174,11 @@
 
     </div>
 
-  </section>
+  </section> -->
 
   <section class="lg:my-36 my-12">
     <div class="container">
-      <div class="flex items-center justify-between mb-12">
+      <div class="flex items-center justify-between mb-12 max-sm:flex-col gap-10">
         <div class="">
           <p class="font-extrabold text-18px  mb-4 text-black">
             آراء عملائنا !
@@ -1221,22 +1221,31 @@
       <div>
 
 
-        <div class="py-8 sm:py-16 lg:py-24">
+        <div class="">
           <div class="mx-auto  px-4 sm:px-6 lg:px-8">
             <div id="multi-slide"
               data-carousel='{ "loadingClasses": "opacity-0", "slidesQty": { "xs": 1, "md": 2 , "lg": 3 } ,  "isRTL": true }'
-              class="relative flex w-full gap-12 max-lg:flex-col md:gap-16 lg:items-center lg:gap-24">
+              class="relative flex w-full gap-2 flex-wrap  lg:items-center ">
 
 
-              <div class="carousel rounded-box">
+              <div class="mb-4 flex gap-4 w-full ">
+
+                <button
+                  class="btn btn-square btn-sm carousel-next btn-primary carousel-disabled:opacity-100 carousel-disabled:btn-outline relative hover:text-white">
+                  <span class="icon-[tabler--arrow-right] size-5"></span>
+                </button>
+                <button
+                  class="btn btn-square btn-sm carousel-prev btn-primary carousel-disabled:opacity-100 carousel-disabled:btn-outline relative hover:text-white"
+                  disabled="disabled">
+                  <span class="icon-[tabler--arrow-left] size-5"></span>
+                </button>
+              </div>
+              <div class="carousel py-6 rounded-box">
                 <div class="carousel-body gap-6 opacity-0">
-                  <!-- Slide 1 -->
                   <div class="carousel-slide">
                     <div
-                      class="card card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
-                      <!-- Star Rating -->
+                      class="card rounded-40px card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
                       <div class="card-body gap-8">
-                        <!-- User Info -->
                         <div class="flex items-center gap-3 justify-between items-center">
                           <div class="avatar flex items-center gap-3">
                             <div class="size-12 rounded-full">
@@ -1257,7 +1266,6 @@
 
                         </div>
 
-                        <!-- Content -->
                         <p class="font-normal text-24px text-[#231F20]">
                           انتم شركاءنا للابد اشكركم صراحة من القلب تطبيقكم حل ازمة كبيرة عندنا في الواتساب والرد على
                           العملاء.</p>
@@ -1285,13 +1293,10 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Slide 2 -->
                   <div class="carousel-slide">
                     <div
                       class="card card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
-                      <!-- Star Rating -->
                       <div class="card-body gap-8">
-                        <!-- User Info -->
                         <div class="flex items-center gap-3 justify-between items-center">
                           <div class="avatar flex items-center gap-3">
                             <div class="size-12 rounded-full">
@@ -1312,7 +1317,6 @@
 
                         </div>
 
-                        <!-- Content -->
                         <p class="font-normal text-24px text-[#231F20]">
                           اللي يبي نظام وسيستم متكامل للردود الالية ورسائل تحديثات حالات الطلب والشحن ورسائل التقييم
                           والسلات المتروكة لايتعدى بوتو والسلام ختام </p>
@@ -1345,9 +1349,7 @@
                   <div class="carousel-slide">
                     <div
                       class="card card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
-                      <!-- Star Rating -->
                       <div class="card-body gap-8">
-                        <!-- User Info -->
                         <div class="flex items-center gap-3 justify-between items-center">
                           <div class="avatar flex items-center gap-3">
                             <div class="size-12 rounded-full">
@@ -1368,7 +1370,6 @@
 
                         </div>
 
-                        <!-- Content -->
                         <p class="font-normal text-24px text-[#231F20]">
                           تطبيق بوتو عمل لنا نقله نوعية في المبيعات بمجرد تفعيل خاصية استهداف السلات المتروكة عبر
                           الواتساب اوتوماتيكاً يعطيهم العافيه</p>
@@ -1402,16 +1403,14 @@
                   <div class="carousel-slide">
                     <div
                       class="card card-border bg-[#0D4C3E1A] hover:border-primary transition-border h-full shadow-none duration-300">
-                      <!-- Star Rating -->
                       <div class="card-body gap-8">
-                        <!-- User Info -->
                         <div class="flex items-center gap-3 justify-between items-center">
                           <div class="avatar flex items-center gap-3">
                             <div class="size-12 rounded-full">
                               <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-5.png" alt="Craig Bator" />
                             </div>
                             <div class="!flex items-center font-extrabold text-18px text-primary">
-                                  احمد محمد
+                              احمد محمد
                             </div>
 
                           </div>
@@ -1425,7 +1424,6 @@
 
                         </div>
 
-                        <!-- Content -->
                         <p class="font-normal text-24px text-[#231F20]">
                           اللي يبي نظام وسيستم متكامل للردود الالية ورسائل تحديثات حالات الطلب والشحن ورسائل التقييم
                           والسلات المتروكة لايتعدى بوتو والسلام ختام </p>
@@ -1458,26 +1456,19 @@
 
                 </div>
               </div>
-              <div class="mt-10 flex gap-4">
-                <button
-                  class="btn btn-square btn-sm carousel-prev btn-primary carousel-disabled:opacity-100 carousel-disabled:btn-outline relative hover:text-white"
-                  disabled="disabled">
-                  <span class="icon-[tabler--arrow-left] size-5"></span>
-                </button>
-                <button
-                  class="btn btn-square btn-sm carousel-next btn-primary carousel-disabled:opacity-100 carousel-disabled:btn-outline relative hover:text-white">
-                  <span class="icon-[tabler--arrow-right] size-5"></span>
-                </button>
-              </div>
+
             </div>
+
           </div>
+
+
         </div>
 
 
       </div>
     </div>
 
-  </section>
+  </section> 
 
   <footer class="pt-36 pb-16 font-extrabold text-18px">
     <div class="container">
