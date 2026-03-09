@@ -27,6 +27,61 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }, 100);
 
+  // Pricing toggle behavior: annual mode shows only Pro annual package.
+  const pricingToggle = document.getElementById("toggle-price-count");
+  const annualRadio = document.getElementById("toggle-price-count-annual");
+  const monthlyRadio = document.getElementById("toggle-price-count-monthly");
+  const plusCard = document.getElementById("pricing-plus-card");
+  const proCard = document.getElementById("pricing-pro-card");
+  const proTitle = document.getElementById("pricing-pro-title");
+  const pricingGrid = document.getElementById("pricing-cards-grid");
+
+  const applyPricingMode = () => {
+    if (!annualRadio || !monthlyRadio) return;
+
+    const isAnnual = annualRadio.checked;
+    const priceNodes = document.querySelectorAll("[data-toggle-count]");
+
+    priceNodes.forEach((node) => {
+      try {
+        const config = JSON.parse(node.getAttribute("data-toggle-count") || "{}");
+        const value = isAnnual ? config.max : config.min;
+        if (value !== undefined) {
+          node.textContent = String(value);
+        }
+      } catch {
+        // Ignore malformed config and keep existing text.
+      }
+    });
+
+    if (plusCard) {
+      plusCard.classList.toggle("hidden", isAnnual);
+    }
+
+    if (proCard) {
+      proCard.classList.toggle("md:col-span-2", isAnnual);
+      proCard.classList.toggle("mx-auto", isAnnual);
+      proCard.classList.toggle("md:max-w-[760px]", isAnnual);
+      proCard.classList.toggle("max-w-none", !isAnnual);
+    }
+
+    if (pricingGrid) {
+      pricingGrid.classList.toggle("md:grid-cols-2", !isAnnual);
+      pricingGrid.classList.toggle("md:grid-cols-1", isAnnual);
+    }
+
+    if (proTitle) {
+      proTitle.textContent = isAnnual ? "برو السنوية" : "برو";
+    }
+  };
+
+  if (pricingToggle) {
+    pricingToggle
+      .querySelectorAll('input[name="toggle-price-count"]')
+      .forEach((input) => input.addEventListener("change", applyPricingMode));
+    applyPricingMode();
+  }
+
   // Stats Counter Animation with GSAP
   const statsNumbers = document.querySelectorAll('[data-count]');
   if (statsNumbers.length > 0) {
